@@ -1,0 +1,17 @@
+nome = input("Nome do agente: ")
+nota = float(input("nota final(0 a 10): "))
+
+if 9 <= nota <= 10:
+    classificacao = "exelente"
+elif 7 <= nota < 9:
+    classificacao = "bom"
+elif 5 <= nota < 7:
+    classificacao = "regular"
+elif 3 <= nota < 5:
+    classificacao = "ruim"
+elif 0 <= nota < 3:
+    calssificacao = "critica"
+else:
+    classificacao = "nota invalida"
+
+print(f"agente{nome}, sua classificacao é: {classificacao} (nota: {nota})")
